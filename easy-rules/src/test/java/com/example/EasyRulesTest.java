@@ -6,14 +6,14 @@ import org.junit.Test;
 import com.example.base.Afiliacion;
 import com.example.base.Afiliacion.Categoria;
 import com.example.base.Afiliacion.Subcategoria;
-import com.example.rulebook.Rulebook;
-import com.example.base.Servicio;
 import com.example.base.Base;
+import com.example.base.Servicio;
+import com.example.easy_rules.EasyRules;
 
-public class RulebookTest {
+public class EasyRulesTest {
     private Servicio servicio;
     private Base reglas;
-    private Rulebook rulebook;
+    private EasyRules easyRules;
     private Afiliacion juan;
     private Afiliacion pedro;
     private Afiliacion maria;
@@ -32,27 +32,27 @@ public class RulebookTest {
                 new Servicio.CargaAfiliado(ana, haberAna),
         });
         reglas = new Base(servicio);
-        rulebook = new Rulebook(servicio);
+        easyRules = new EasyRules(servicio);
     }
 
     @Test
     public void descendientePrimerGrado() {
-        assertEquals(reglas.calcularCuota(juan), rulebook.calcularCuota(juan));
+        assertEquals(reglas.calcularCuota(juan), easyRules.calcularCuota(juan));
     }
 
     @Test
     public void becario() {
-        assertEquals(reglas.calcularCuota(maria), rulebook.calcularCuota(maria));
+        assertEquals(reglas.calcularCuota(maria), easyRules.calcularCuota(maria));
     }
 
     @Test
     public void conyuge() {
-        assertEquals(reglas.calcularCuota(pedro), rulebook.calcularCuota(pedro));
+        assertEquals(reglas.calcularCuota(pedro), easyRules.calcularCuota(pedro));
     }
 
     @Test
     public void agenteUNSLConLicencia() {
-        assertEquals(reglas.calcularCuota(ana), rulebook.calcularCuota(ana));
+        assertEquals(reglas.calcularCuota(ana), easyRules.calcularCuota(ana));
     }
 
     private void assertEquals(double v1, double v2) {

@@ -54,7 +54,7 @@ public class Rulebook {
                             } else if (afiliado.getEdad() <= 55) {
                                 result.setValue(servicio.getHaberPercibido(afiliado.getId()) * 0.95);
                             } else if (afiliado.getEdad() <= 65) {
-                                result.setValue(servicio.getHaberPercibido(afiliado.getId()) * 0.4);
+                                result.setValue(servicio.getHaberPercibido(afiliado.getId()) * 1.13);
                             } else {
                                 result.setValue(servicio.getHaberPercibido(afiliado.getId()) * 1.86);
                             }
