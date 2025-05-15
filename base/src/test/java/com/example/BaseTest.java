@@ -7,14 +7,14 @@ import com.example.base.Afiliacion;
 import com.example.base.Afiliacion.Categoria;
 import com.example.base.Afiliacion.Subcategoria;
 import com.example.base.Servicio;
-import com.example.base.SinMotor;
+import com.example.base.Base;
 
 /**
  * Unit test for simple App.
  */
 public class BaseTest {
     private Servicio servicio;
-    private SinMotor reglas;
+    private Base reglas;
     private Afiliacion juan;
     private Afiliacion pedro;
     private Afiliacion maria;
@@ -32,7 +32,7 @@ public class BaseTest {
                 new Servicio.CargaAfiliado(pedro, maria),
                 new Servicio.CargaAfiliado(ana, haberAna),
         });
-        reglas = new SinMotor(servicio);
+        reglas = new Base(servicio);
     }
 
     @Test
