@@ -49,7 +49,7 @@ public class Servicio {
         }
     }
 
-    public double getHaberPercibido(long afiliacionId) {
+    public Double getHaberPercibido(long afiliacionId) {
         return haberesPercibidos.get(afiliacionId);
     }
 
