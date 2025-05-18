@@ -16,9 +16,10 @@
     <modules>
         <module>base</module>
         <module>drools</module>
-        <!-- <module>openl-tablets</module> -->
+        <module>openl-tablets</module>
         <module>easy-rules</module>
         <module>rulebook</module>
+        <module>afiliacion-wrapper</module>
     </modules>
 
 </project>

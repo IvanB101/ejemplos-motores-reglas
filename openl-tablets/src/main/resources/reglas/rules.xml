@@ -1,0 +1,13 @@
+<project>
+    <name>Ejemplo Básico con OpenL Tablets</name>
+    <modules>
+        <module>
+            <name>Calculo cuotas</name>
+            <rules-root path="Calculo Cuotas.xlsx" />
+        </module>
+    </modules>
+    <classpath>
+
+        <entry path="../../../target/*.jar" />
+    </classpath>
+</project>
