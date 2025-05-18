@@ -7,7 +7,6 @@
         </module>
     </modules>
     <classpath>
-
         <entry path="../../../target/*.jar" />
     </classpath>
 </project>
